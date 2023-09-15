@@ -38,12 +38,13 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding-inline: 3.5%;
-    padding-block: 10px;
+    padding-block: 1%;
     /* border-bottom: 1px solid lightgray; */
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
+    margin-bottom: 1em;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 nav #navItems{
     display: none;
@@ -89,12 +90,12 @@ nav a{
     display: flex;
     width: 100%;
     padding-inline: 3.5%;
-    height: 28em;
-    
+    height: 20%;
+    /* aspect-ratio: 16/9; */
 }
 
 #heroLeft {
-    margin-right: 25px;
+    margin-right: 2em;
     width: 60%;
     padding-block: 5%;
 }
@@ -121,34 +122,48 @@ nav a{
 #donationDiv{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-block: 25px;
+    justify-content: space-evenly;
+    padding-block: 2%;
+    padding-inline: 1%;
     background-color: #F0FCDA;
     margin-inline: 3.5%;
     border-radius: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
 }
 
 #donationLeft #h4Left{
     background-color: rgb(69, 67, 67);
     color: #fff;
-    height: 5em;
-    padding: 2em 0.8em;
+    /* height: 50%; */
+    /* padding: 3vh 1vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2%;
     border-radius: 5px 0px 0px 5px;
-    font-size: 10px;
+    font-size: 14px;
 }
 #donationLeft #h4Right{
     background-color: rgb(69, 67, 67);
     color: #fff;
-    height: 5em;
-    padding: 13% 8%;
+    /* height: 5em; */
+    /* padding: 13% 8%; */
+    padding-inline: 2%;
+    /* padding-block: 7%; */
+    /* padding: 3vh 1vw; */
     border-radius: 0px 5px 5px 0px;
-    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: -1px;
 }
 
 #donationLeft input{
-    width: 5em;
+    /* width: 5em; */
+    width: 25%;
     height: 3.8em;
+    margin-left: -1px;
 }
 
 #donationRight button{
@@ -156,7 +171,7 @@ nav a{
     outline: none;
     border: none;
     /* border: 1px solid lightgray; */
-    padding: 1.5em 1.5em;
+    padding: 1.2em 1.2em;
     border-radius: 5px;
     margin: 5px 0px;
     cursor: pointer;
@@ -192,4 +207,207 @@ nav a{
     justify-content: center;
     align-items: center;
     font-weight: 700;
+}
+#doing #doingBottom{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#welfare, #Medical, #OnlineSadaqah, #ROPlant, #Education, #Food{
+    /* background-color: rgba(182,239,73,.2); */
+    background-color: #F0FCDA;
+    text-align: center;
+    height: 30vh;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 1.5em 1.5em; */
+    border-radius: 7px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+#welfare:hover, #Medical:hover, #OnlineSadaqah:hover, #ROPlant:hover, #Education:hover, #Food:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#projects{
+    width: 93%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+#projects #itEnt{
+    background-image: url(./images/itEnt.jpg);
+    /* background-size:50em 25em; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31%;
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 7px;
+}
+
+
+#projects #DailyFood{
+    background-image: url(./images/dailyFood.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 31%;
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 7px;
+}
+
+#projects #Zakat{
+    /* background-color: rgba(0,0,0, 0.6); */
+    background: url(./images/zakaat.jpg);
+    background-color: rgba(0,0,0,.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 31%;
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 7px;
+}
+
+#projects #Zakat:hover, #projects #DailyFood:hover, #projects #itEnt:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+#projects button{
+    background-color: #8DC63F;
+    width: 93%;
+    height: 3em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+
+#projects button{
+    margin: 0px 0px 1em 1em;
+}
+
+#projects p{
+    font-size: 26px;
+    /* background-color: #8DC63F; */
+    margin: 1em 1em;
+}
+
+
+#otherProjects{
+    width: 93%;
+    margin: auto;
+    /* background-color: #8DC63F; */
+    display: flex;
+}
+
+#otherLeft{
+    width: 45%;
+    margin-right: 3%;
+    /* background-color: #8DC63F; */
+}
+#otherLeft img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 35px 0px 0px 0px ;
+}
+
+
+#otherLeft #txt{
+    position:relative;
+    top: -404px;
+    /* top: 50px; */
+    border-radius: 35px 0px 0px 0px ;
+    background-color: #8DC63F;
+    width: 50%;
+    height: 200px;
+    font-size: 1vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+
+#otherRight{
+    width: 50%;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:700px) {
+    #heroLeft{
+        width: 100%;
+    }
+    #heroRight{
+        display: none;
+    }
+
+    #doingBottom{
+        flex-direction: column;
+    }
+
+    #welfare, #Medical, #OnlineSadaqah, #ROPlant, #Education, #Food{
+        /* background-color: rgba(182,239,73,.2); */
+        height: 30vh;
+        width: 75%;
+    }
+
+    #projects{
+        width: 93%;
+        display: block;
+    }
+
+    #projects #itEnt, #projects #DailyFood, #projects #Zakat {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+
+
+}
+
+@media screen and (max-width:990px) {
+    #donationDiv{
+        flex-direction: column;
+        padding-inline: 2%;
+        /* background-color: orange; */
+    }
+
+    #donationLeft input{
+        width: 100%;
+        height: 3.8em;
+    }
 }
