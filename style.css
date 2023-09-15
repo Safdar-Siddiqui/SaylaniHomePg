@@ -367,7 +367,7 @@ nav a{
 
 /* Responsive */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px) {
     #heroLeft{
         width: 100%;
     }
