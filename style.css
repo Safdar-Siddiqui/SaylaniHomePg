@@ -260,6 +260,7 @@ nav a{
     color: #fff;
     font-weight: 800;
     border-radius: 7px;
+    box-shadow: inset 0 0 0 150px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -276,12 +277,14 @@ nav a{
     color: #fff;
     font-weight: 800;
     border-radius: 7px;
+    box-shadow: inset 0 0 0 150px rgba(0, 0, 0, 0.6);
 }
 
 #projects #Zakat{
     /* background-color: rgba(0,0,0, 0.6); */
     background: url(./images/zakaat.jpg);
-    background-color: rgba(0,0,0,.6);
+     /* rgba(0, 0, 0, 0.6); */
+    /* background-color: rgba(0,0,0,.6); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 31%;
@@ -293,6 +296,7 @@ nav a{
     color: #fff;
     font-weight: 800;
     border-radius: 7px;
+    box-shadow: inset 0 0 0 150px rgba(0, 0, 0, 0.6);
 }
 
 #projects #Zakat:hover, #projects #DailyFood:hover, #projects #itEnt:hover {
@@ -310,6 +314,7 @@ nav a{
     outline: none;
     color: #fff;
     margin: 0px 0px 1em 0px;
+    cursor: pointer;
 }
 
 /* #projects #itEnt button{
@@ -330,11 +335,15 @@ nav a{
     display: flex;
     /* align-items: center; */
     justify-content: center;
+
 }
 
 #otherLeft{
     width: 45%;
     margin-right: 3%;
+    /* height: 450px; */
+    height: 60vh;
+    /* background-color: violet; */
     /* background-color: #8DC63F; */
 }
 #otherLeft img{
@@ -366,17 +375,74 @@ nav a{
 
 #otherRight{
     width: 50%;
+    height: fit-content;
+    /* background-color: turquoise; */
 }
 
 #counts{
     background-color: #0d6efd;
-    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
-    background-repeat: no-repeat;
+    position: relative;
     width: 93%;
-    height: auto;
+    height: fit-content;
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: auto; 
+}
+
+#counts:before{
+    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* #counts img{
+    width: 20vh;
+    height: 10vh;
+} */
+
+#counts #countsFood, #counts #countsFamilyAdoption, #counts #countsEducation, #counts #countsMedical{
+    /* background-color: yellowgreen; */
+    width: 250px;
+    height: 300px;
+    margin-block: 5%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 3%; */
+    /* border-radius: 50%; */
+    /* background-color: white; */
+}
+
+#countsFoodLogo, #countsFamilyLogo, #countsEduLogo, #countsMedLogo{
+    background-color: white;
+    /* background-image: url(./images/50.png); */
+    border-radius: 50%;
+    width:170px;
+    height: 170px;
+    padding-block: 75px;
+    /* width: 100%;
+    height: 100%; */
+    /* padding: 25%; */
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#counts h2, #counts p{
+    color: #fff;
 }
 
 
@@ -447,4 +513,25 @@ nav a{
         width: 75%;
         /* height: 420px; */
     }
+
+    #otherLeft img, #otherLeft #txt{
+        border-radius: 0px 0px;
+    }
+
+    #counts{
+        display: flex;
+        /* align-items: center; */
+        flex-wrap:wrap;
+        margin-top: 3%;
+    }
+
+    #countsFoodLogo, #countsFamilyLogo,  #countsEduLogo, #countsMedLogo{
+        width: 170px;
+        height: 170px;
+        margin-block: 5%;
+        padding: 50px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    
 }
