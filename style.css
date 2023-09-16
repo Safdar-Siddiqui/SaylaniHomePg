@@ -445,13 +445,234 @@ nav a{
     color: #fff;
 }
 
+#testimonials{
+    width: 93%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials #heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+#testimonials #what{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#carousel{
+    background-color: #eeeeee;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-block: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#carouselImg{
+    height: 10em;
+    width: 10em;
+    background-color: #fff;
+    border-radius: 50%;
+    /* margin-block: 20px; */
+}
+
+#carouselImg img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+#carouselName{
+    margin-top: 30px;
+}
+
+#carouselMsg p{
+    text-align: center; 
+    font-size: 20px;
+    /* background-color: bisque;  */
+    margin-inline: 25px;
+	margin-block:20px;
+    line-height: 2;
+}
+
+#btnLeft, #btnRight {
+    font-size: 25px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #8DC63F;
+    color: white;
+}
+
+#btnLeft{
+    color: #000;
+    background-color: #fff;
+}
+
+#news{
+    width: 93%;
+    height: auto;
+    margin: auto;
+    margin-top: 35px;
+}
+
+#newsHeading{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+#newsItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+#card1, #card2, #card3, #card4{
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin-inline: 5px;
+    margin-bottom: 25px;
+}
+#newsItems img{
+    /* background-color: #eeeeee; */
+    border-radius: 10px 10px 0px 0px;
+}
+
+#newsItems #container{
+    padding: 15px;
+}
+
+.newsDateBtn{
+    background-color: #8DC63F;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.newsArrBtn{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    /* color: #fff; */
+    margin-top: 10px;
+}
+.newsArrBtn:hover{
+    transform: scale(1.1);
+}
+
+#guide{
+    width: 93%;
+    margin: auto;
+    height: auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#0d6efd;
+    color: #fff;
+}
+
+#guide #guideForm{
+    /* background-color: #8DC63F; */
+    width: 50%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#guide #guideForm form{
+    width: 80%;    
+    display: flex; 
+    flex-direction: column;
+}
+
+#guide #guideForm form input[type=text]{
+    width: 100%;
+    padding-inline: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 60px;    
+    margin-bottom: 25px;
+    border-radius: 7px;
+}
+::placeholder{
+    color: #fff;
+}
+#guide #guideForm form input[type=submit]{
+    width: 100%;
+    background-color:#fff;
+    border:none;
+    height: 60px;
+    border-radius: 7px;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    height: fit-content;
+    margin: auto; 
+    color: #fff;
+    margin-top:  50px;
+    /* line-height: 3; */
+}
+footer #container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer #about, footer #explore, footer #contact{
+    line-height: 2;
+}
+
+footer:before{
+    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 
 
 
 
 /* Responsive */
-
-
 
 @media screen and (max-width:990px) {
     #donationDiv{
@@ -533,5 +754,26 @@ nav a{
         border-radius: 50%;
         background-color: white;
     }
-    
+
+    #newsItems{
+        flex-wrap: wrap;
+    }
+
+    footer #container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #about{
+        margin: 20px 0px;
+        line-height: 3;
+    }
+    footer #explore{
+        margin-bottom: 20px;
+        line-height: 3;
+    }
+    footer #contact{
+        /* margin-bottom: 20px; */
+        line-height: 1.5;
+    }
 }
